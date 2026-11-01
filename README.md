@@ -1,198 +1,322 @@
-<h1 align="center">Hey there, I'm Sarthak Jain 👋</h1>
+# Sarthak Jain
 
-<p align="center">
-  <a href="https://github.com/SarthakJain23">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=650&lines=AI-Focused+Full+Stack+Engineer+%F0%9F%A4%96;Building+LLM-Powered+Production+Systems+%E2%9A%A1;LangChain+%C2%B7+LangGraph+%C2%B7+RAG+Architect+%F0%9F%94%97;React+Native+%7C+Next.js+%7C+Remix.js+%F0%9F%93%B1;1000%2B+DSA+Problems+Solved+%F0%9F%8F%86;Open+to+Exciting+Opportunities+%F0%9F%9A%80" alt="Typing SVG" />
-  </a>
+**Full Stack & AI Engineer.** Web, mobile and LLM systems in production.
+
+<p>
+  <a href="https://www.linkedin.com/in/sarthak-jain-tech"><img src="https://img.shields.io/badge/LinkedIn-sarthak--jain--tech-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:sarthakj.dev@gmail.com"><img src="https://img.shields.io/badge/Email-sarthakj.dev%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+  <img src="https://img.shields.io/badge/Gurgaon,_India-555?style=flat-square" alt="Gurgaon, India">
 </p>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/sarthak-jain-tech">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:sarthakj.dev@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://github.com/SarthakJain23">
-    <img src="https://img.shields.io/github/followers/SarthakJain23?label=Follow&style=for-the-badge&logo=github&logoColor=white&color=6c63ff" alt="GitHub Followers" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=SarthakJain23&style=for-the-badge&color=6c63ff&label=PROFILE+VIEWS" alt="Profile Views" />
+I have spent 3+ years building products end to end: LLM-powered backends, React Native apps, serverless pipelines on AWS and payment infrastructure. I care about systems that are simple to operate and hard to break.
+
+**Now**
+
+- Engineering at **Turom**, an AI travel-planning SaaS: the React Native app, a serverless media pipeline, LangChain workflows and the payments layer.
+- Maintaining **[ParaSpace](https://github.com/SarthakJain23/para-space)**, an open-source Git worktree orchestrator for running several coding agents in parallel.
+- Working AI-native day to day with Claude Code, Cursor and Gemini Antigravity.
+
+## GitHub activity
+
+<p>
+  <img width="49%" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=SarthakJain23&show_icons=true&hide_border=true&theme=tokyonight&bg_color=00000000&include_all_commits=true" alt="GitHub stats">
+  <img width="49%" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=SarthakJain23&layout=compact&hide_border=true&theme=tokyonight&bg_color=00000000&langs_count=8" alt="Top languages">
+</p>
+<p>
+  <img width="98%" src="https://streak-stats.demolab.com?user=SarthakJain23&hide_border=true&theme=tokyonight&background=00000000" alt="Contribution streak">
 </p>
 
----
+## Featured projects
 
-## 🧑‍💻 About Me
+### [ParaSpace](https://github.com/SarthakJain23/para-space)
 
-```yaml
-name: Sarthak Jain
-location: Gurgaon, India
-role: AI-Focused Full Stack Engineer
-experience: 1+ years building LLM-powered systems & high-performance web platforms
-current_company: Turom (AI Travel Planning)
-education: B.E. Computer Science — Chitkara University (CGPA: 9.73/10)
-expertise:
-  - LangChain, LangGraph & RAG Architectures
-  - Full Stack Web (Next.js, Remix.js, React)
-  - React Native Mobile Development
-  - AWS Serverless (Lambda, SQS, S3)
-  - System Design & Distributed Systems
-looking_for: Software Engineering Opportunities 🚀
+[![CI](https://github.com/SarthakJain23/para-space/actions/workflows/ci.yml/badge.svg)](https://github.com/SarthakJain23/para-space/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/%40para-space-dev%2Fcli?label=npm&style=flat-square)](https://www.npmjs.com/package/@para-space-dev/cli)
+[![VS Code Marketplace](https://vsmarketplacebadges.dev/version-short/para-space.para-space-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=para-space.para-space-vscode)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/SarthakJain23/para-space/blob/main/LICENSE)
+
+Running several branches or coding agents at once in one repo means stashing, reinstalling dependencies and fighting over port 3000. ParaSpace gives every task its own Git worktree with shared dependencies, a stable port and a coloured IDE window, so parallel work stays parallel. It ships as a CLI (`para`) and a VS Code extension, and exposes a Model Context Protocol (MCP) server so Claude Code, Cursor and Windsurf can manage worktrees themselves.
+
+`TypeScript` · `Node.js` · `VS Code API` · `MCP` · `pnpm monorepo`
+
+<img src="https://raw.githubusercontent.com/SarthakJain23/para-space/main/.github/assets/readme/before-after.png" alt="Without ParaSpace: one folder, stashed work, npm install per clone, port collisions. With ParaSpace: a worktree per task, shared deps, assigned ports, a colour per window." width="100%">
+
+```mermaid
+flowchart LR
+    subgraph Frontends["Front ends"]
+        CLI["para CLI"]
+        EXT["VS Code extension"]
+        LM["VS Code LM tools"]
+        MCP["MCP server<br/>Claude Code · Cursor · Windsurf"]
+    end
+
+    CORE["@para-space/core<br/>one engine"]
+
+    subgraph Managed["What it manages"]
+        WT["Worktree per branch"]
+        DEPS["Shared node_modules / .venv<br/>via links, isolate on demand"]
+        PORTS["Port strategy<br/>offset · scan · pool · passthrough"]
+        WS[".code-workspace for multi-repo"]
+        COLOR["OKLCH window colour"]
+    end
+
+    CLI --> CORE
+    EXT --> CORE
+    LM --> CORE
+    MCP --> CORE
+    CORE --> WT
+    CORE --> DEPS
+    CORE --> PORTS
+    CORE --> WS
+    CORE --> COLOR
 ```
 
-- 🔭 Building **LLM-powered AI pipelines** at **Turom** (AI Travel Planning)
-- 🤖 Hands-on with **LangChain**, **LangGraph** & **RAG** (Gemini, ChromaDB)
-- ⚡ Reduced query latency from **seconds → milliseconds** in production
-- 📱 Shipped **React Native** apps with deep linking, push notifications & IAP
-- 🏗️ Designed **scalable async media pipelines** on AWS (SQS + Lambda + S3)
-- 🎯 Solved **1000+ DSA problems** across platforms
-- 🏆 **1st Place** — Coding Ninjas Codathon 2023
-- 🎓 **9.73 CGPA** — B.E. Computer Science, Chitkara University
+| Feature | What it does |
+|:--|:--|
+| Zero-duplication dependencies | New worktrees link to the main checkout's `node_modules`, `.venv` and `.env`, so a branch costs seconds and no disk. `para isolate` breaks the link when a branch needs its own. |
+| Per-worktree ports | Four strategies (`offset`, `scan`, `pool`, `passthrough`) give each worktree a stable dev-server port, saved in `.para-space.json`. |
+| Multi-repo workspaces | `para workspace create` discovers sibling repos, provisions a worktree in each, generates a `.code-workspace` and opens it. If any repo fails, the run rolls back. |
+| Divergence detection | Manifest watchers and `para check` warn when a worktree's dependencies drift from the shared set, with one-click isolation. |
+| Agent integration | `para setup-agent` registers the MCP server; VS Code Language Model tools expose the same commands to Copilot-style agents. Every command accepts `--yes` so nothing prompts. |
+| VS Code UI | Worktrees sidebar, status-bar quick switcher, context-history ledger and a port-strategy configurator. |
 
----
+```bash
+npm install -g @para-space-dev/cli
+para create feat/TK-101 --base main -r "Auth redesign"   # worktree + shared deps + its own port
+para workspace create feat/TK-101                        # same branch across frontend + backend repos
+para setup-agent                                         # register the MCP server with your agent
+```
 
-## 🛠️ Tech Stack
+<details>
+<summary>Design notes</summary>
 
-### Languages
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+- **Links, not copies.** Sharing one dependency tree across worktrees is the whole point; the trade-off is divergence, so watchers and `para check` exist to make that visible, and `isolate` is the escape hatch.
+- **Strategy pattern everywhere.** Frameworks (Node, Python, env files) and port strategies are pluggable modules under `packages/core`, so adding a language or allocation scheme does not touch the commands.
+- **One engine, many front ends.** The CLI, extension, LM tools and MCP server are thin layers over `@para-space/core`, which does no terminal I/O. That keeps behaviour identical whether a human or an agent drives it.
+- **Clean repos.** State lives in `~/.para-space/`; the only in-repo file is `.para-space.json`, excluded through `.git/info/exclude`.
+- **Living docs.** Decision log, flow document and contributor guidelines ship with the code and are updated with every change.
 
-### Frontend
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Remix](https://img.shields.io/badge/Remix-000000?style=for-the-badge&logo=remix&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+</details>
 
-### Backend
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
-![Django](https://img.shields.io/badge/Django_REST-092E20?style=for-the-badge&logo=django&logoColor=white)
+### [PolicyHelper](https://github.com/SarthakJain23/PolicyHelper)
 
-### AI / ML
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-2D3748?style=for-the-badge&logo=graphql&logoColor=white)
-![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logo=bookstack&logoColor=white)
-![RAG Systems](https://img.shields.io/badge/RAG_Systems-4CAF50?style=for-the-badge&logo=openai&logoColor=white)
+Company policy lives in dense handbooks, and employees file tickets to ask about leave, reimbursements or IT rules. PolicyHelper is a self-hosted assistant that answers those questions from the actual documents, scoped to the employee's department, with a citation on every answer. Documents and embeddings never leave your database.
 
-### Databases & Cloud
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+`FastAPI` · `Next.js 15` · `LangChain / LangGraph` · `PostgreSQL + pgvector` · `TypeScript` · `Tailwind v4`
 
----
+```mermaid
+flowchart TD
+    subgraph Client["Next.js 15 client"]
+        CHAT["Employee chat with citation drawer"]
+        ADMIN["Admin and HR console"]
+    end
 
-## 💼 Professional Experience
+    subgraph API["FastAPI backend"]
+        AUTH["Auth and RBAC<br/>JWT · Argon2 · department scoping"]
+        INGEST["Ingestion<br/>PDF · DOCX · MD · TXT, structure-aware chunking"]
+        SSE["Chat API, Server-Sent Events"]
+    end
 
-### 🚀 Full Stack & Mobile Engineer — Turom *(AI Travel Planning)*
+    subgraph RAG["LangGraph pipeline"]
+        REWRITE["Query rewriting"] --> RETRIEVE["Hybrid retrieval<br/>pgvector + BM25 tsvector"]
+        RETRIEVE --> RERANK["Cross-encoder reranking"]
+        RERANK --> GEN["Streaming generation with citations"]
+    end
 
-`Aug 2025 – Present` · `Remix.js` `Express.js` `TypeScript` `Python` `LangChain` `React Native` `AWS`
+    subgraph PG["PostgreSQL 16"]
+        REL[("Users · orgs · sessions · audit log")]
+        VEC[("pgvector embeddings")]
+        FTS[("tsvector full-text index")]
+    end
 
-- Built & maintained the **React Native mobile app** end-to-end — deep linking, push notifications, Apple In-App Purchases
-- Built **LangChain-powered background AI tasks** for automated data/content processing pipelines
-- Architected **scalable async media pipelines** on AWS SQS + Lambda + S3, offloading heavy video transcoding to serverless workers
-- Designed a **scalable payment service** supporting multiple providers (Apple IAP, Stripe) with configurable fee handling
-- Developed an **end-to-end campaign module** enabling multiple simultaneous campaigns with dynamic rules & flexible rewards
+    LLM["LLM providers<br/>OpenAI · Anthropic · Gemini<br/>keys encrypted at rest"]
 
-### 🏥 Full Stack Developer — Care.Fi *(Health Fintech)*
+    CHAT --> SSE
+    ADMIN --> AUTH
+    ADMIN --> INGEST
+    INGEST --> VEC
+    INGEST --> FTS
+    SSE --> RAG
+    RETRIEVE --> VEC
+    RETRIEVE --> FTS
+    GEN --> LLM
+    API --> REL
+```
 
-`Apr 2024 – Aug 2025` · `Python` `Django` `React` `NestJS` `TypeScript` `Java` `PostgreSQL` `Docker` `Celery`
+| Feature | What it does |
+|:--|:--|
+| Hybrid retrieval | Dense vector search in pgvector and sparse BM25 keyword search in `tsvector`, merged and reranked, so exact policy terms and paraphrased questions both hit. |
+| Verifiable citations | Every answer carries document name, page, section header and the matched excerpt. Clicking a citation opens the exact passage with its similarity score. |
+| Structure-aware ingestion | Hierarchical, header-aware chunkers keep context like "4.2 Parental Leave > Eligibility" intact instead of splitting mid-sentence. Storage is pluggable: local disk, S3, MinIO or R2. |
+| Department-scoped RBAC | Super Admin, HR Admin, Manager and Employee roles. Documents are assigned to departments and queries respect the asker's clearance automatically. |
+| Multi-LLM | OpenAI, Anthropic or Gemini per organisation, switchable from the admin UI. API keys are Fernet-encrypted at rest. |
+| Audit and chat history | Searchable log of queries, uploads, configuration changes and auth events. Multi-session chat with auto-generated titles. |
 
-- Migrated **Business Rule Engine (BRE)** from Java Spring Boot to Python DRF — reduced deployment cycles & improved maintainability
-- Built end-to-end **Credit Analysis Memorandum (CAM) automation** — cut report generation time by **70%**
-- Integrated **high-availability third-party APIs** across GST, Bureau, and Financial systems for core lending workflows
-- Designed **Metabase dashboards** on optimized PostgreSQL reporting queries for real-time business intelligence
+```bash
+git clone https://github.com/SarthakJain23/PolicyHelper && cd PolicyHelper
+cp .env.example .env && docker compose up -d                        # PostgreSQL + pgvector
+cd apps/api && uv sync && uv run alembic upgrade head && uv run uvicorn app.main:app --reload
+cd apps/web && pnpm install && pnpm dev                             # http://localhost:3000
+```
 
----
+<details>
+<summary>Design notes</summary>
 
-## 🚀 Featured Projects
+- **PostgreSQL does everything.** Relational data, vectors and full-text search live in one engine, which removes a separate vector database from the deployment and keeps department scoping a plain SQL filter on the retrieval query.
+- **Hybrid over pure vector.** Policy questions often hinge on exact terms (form names, clause numbers) that embeddings blur. BM25 catches those; the reranker settles the merged list.
+- **LangGraph as the control flow.** Rewriting, routing and reranking are explicit graph nodes, so each step can be inspected and swapped without touching the API layer.
+- **Streaming first.** Tokens go out over SSE as they are generated, and the citation payload arrives with them so the UI never waits for a full answer.
+- **Security defaults.** HTTP-only cookie JWTs, Argon2 hashing, forced password reset on first login, encrypted provider keys.
 
-| Project | Description | Tech Stack |
-|:--------|:-----------|:-----------|
-| 🤖 **[Business Analyst RAG](https://github.com/SarthakJain23/business_analyst_rag)** | Production-ready RAG platform using Google Gemini & LangGraph for automated financial report analysis with incremental ingestion via SHA-256 hashing | `Python` `Gemini API` `LangGraph` `ChromaDB` `Streamlit` |
-| 🔗 **[LangChain Course](https://github.com/SarthakJain23/langchain-course)** | Comprehensive hands-on LangChain learning — chains, agents, memory, and real-world patterns | `Python` `LangChain` `LLMs` |
-| 🐛 **[Issue Tracker](https://github.com/SarthakJain23/Issue-Tracker)** | Scalable issue management with dynamic task assignment, audit trails & real-time status tracking — sub-100ms queries | `Next.js` `Prisma` `PostgreSQL` `TypeScript` |
-| 📈 **[Stock Prediction](https://github.com/SarthakJain23/stock-prediction-model)** | ML model for stock market price predictions using data science techniques | `Python` `Machine Learning` `Data Science` |
-| 🛍️ **[Storefront Backend DRF](https://github.com/SarthakJain23/storefront-backend-drf)** | E-commerce REST backend with authentication, product catalog, carts, and order workflows | `Python` `Django REST` `PostgreSQL` |
+</details>
 
----
+### [Business Analyst RAG](https://github.com/SarthakJain23/business_analyst_rag)
 
-## 🏗️ System Design & LLD Portfolio
+A Retrieval-Augmented Generation (RAG) app for financial reports. Drop PDFs, Word files and spreadsheets into a folder and ask about trends, risks and specific figures. Only changed files are re-indexed, and every answer shows its sources with match scores.
 
-> Demonstrating strong **Object-Oriented Design**, **SOLID Principles** & **Design Patterns** through real-world TypeScript implementations
+`Python` · `Google Gemini` · `LangGraph` · `ChromaDB` · `Streamlit` · `Pydantic`
 
-| # | Project | Description | Key Patterns |
-|:-:|:--------|:-----------|:-------------|
-| 1 | 🎲 **[Snakes & Ladders](https://github.com/SarthakJain23/snakes-and-ladders-lld)** | Classic board game with OOP design | Strategy, Observer |
-| 2 | 💰 **[Splitwise](https://github.com/SarthakJain23/splitwise-lld)** | Expense splitting with multiple strategies | Strategy, Factory |
-| 3 | 🏧 **[ATM Machine](https://github.com/SarthakJain23/atm-machine-lld)** | ATM system with state transitions | State Machine |
-| 4 | 🏥 **[Doctor Appointment](https://github.com/SarthakJain23/doctor-appointment-lld)** | Appointment booking & scheduling | Builder, Observer |
-| 5 | 🚦 **[Rate Limiter](https://github.com/SarthakJain23/rate-limiter-lld)** | API rate limiting algorithms | Token Bucket, Sliding Window |
-| 6 | 📝 **[Logger System](https://github.com/SarthakJain23/logger-lld)** | Logging framework implementation | Singleton, Chain of Responsibility |
-| 7 | 🎧 **[Customer Service](https://github.com/SarthakJain23/customer-service-lld)** | Queue management system | Queue, Priority |
+```mermaid
+flowchart LR
+    subgraph Ingest["Ingestion"]
+        DOCS["data/documents"] --> HASH["SHA-256 state tracker<br/>added · modified · deleted"]
+        HASH --> LOAD["Loader factory<br/>PDF · DOCX · XLSX/CSV → Markdown · TXT/MD"]
+        LOAD --> SPLIT["Recursive chunking"]
+        SPLIT --> EMB["Gemini embeddings"]
+        EMB --> CHROMA[("ChromaDB, local")]
+    end
 
----
+    subgraph Query["Query"]
+        Q["Question"] --> RET["Top-K retrieval<br/>cosine threshold"]
+        RET --> GEM["Gemini, analyst persona"]
+        GEM --> UI["Streamlit chat<br/>streamed answer + citations"]
+    end
 
-## 📱 React Native Projects
+    CHROMA --> RET
+```
 
-> Cross-platform mobile apps showcasing production-level mobile development skills
+| Feature | What it does |
+|:--|:--|
+| Incremental sync | Files are tracked by SHA-256. Added and modified documents are re-embedded; deleted ones are evicted from the index. No full rebuilds. |
+| Table-aware parsing | Excel and CSV sheets are converted to Markdown tables before chunking so the model keeps rows and columns together. |
+| Tunable retrieval | Top-K, similarity threshold and temperature are sliders in the sidebar, applied per query. |
+| Analyst persona | System prompts are tuned for trend analysis, risk identification and metric extraction, with strict evidence-backed citations. |
+| Local by default | Embeddings and state metadata persist on disk under `data/`; nothing is sent anywhere except the Gemini API calls. |
 
-| App | Key Features | Stack |
-|:----|:------------|:------|
-| 🍔 **[Food Blog](https://github.com/SarthakJain23/Food-Blog-RN)** | Recipe browser, navigation, categories & favourites | `React Native` `TypeScript` |
-| 🔔 **[Push Notifications](https://github.com/SarthakJain23/Push-Notifications-RN)** | Push notification integration with Expo | `React Native` `TypeScript` `Expo` |
-| 📍 **[Favourite Places](https://github.com/SarthakJain23/Favourite-Place-RN)** | Location-based app with maps & device camera | `React Native` `TypeScript` |
-| 🔐 **[Auth Management](https://github.com/SarthakJain23/Authentication-Management-RN)** | Complete auth flow with token management | `React Native` `TypeScript` |
-| 💸 **[Expense Manager](https://github.com/SarthakJain23/Expense-Management-RN)** | Personal expense tracking with analytics | `React Native` `TypeScript` |
-| 🔢 **[Guess The Number](https://github.com/SarthakJain23/Guess-The-Number-RN)** | Interactive number guessing game | `React Native` `JavaScript` |
+```bash
+git clone https://github.com/SarthakJain23/business_analyst_rag && cd business_analyst_rag
+cp .env.example .env                                   # add your GOOGLE_API_KEY
+uv venv && source .venv/bin/activate && uv pip install -r requirements.txt
+streamlit run app.py                                   # drop files into data/documents and sync
+```
 
----
+<details>
+<summary>Design notes</summary>
 
-## 🏆 Achievements & Education
+- **State tracking before embeddings.** Hashing the source files is cheap; embedding is not. The tracker decides what work is needed before any model call.
+- **Loader factory.** Each format has its own loader returning LangChain `Document` objects, and auto-detection picks one by extension, so adding a format is one file.
+- **Thresholded retrieval.** A cosine-similarity floor stops weak matches from reaching the prompt, which matters more for numbers than for prose.
+- **Pydantic settings.** Models, paths and keys are typed configuration loaded from `.env`, with fallbacks across Gemini model versions.
 
-| 🏅 Achievement | Details |
-|:--------------|:--------|
-| 🧠 **1000+ DSA Problems** | Solved across Coding Ninjas, LeetCode & GeeksforGeeks |
-| 🏆 **1st Place** | Coding Ninjas Codathon 2023 |
-| 📊 **50+ Advanced SQL** | Problems solved on LeetCode |
-| 🎓 **B.E. Computer Science** | Chitkara University (2021–2025) — **CGPA: 9.73 / 10** |
+</details>
 
----
+<details>
+<summary><b>More repositories</b></summary>
 
-## 📊 GitHub Analytics
+<br>
+
+| Series | What it covers | Repos |
+|:--|:--|:--|
+| Low-Level Design | Object-oriented design and patterns in TypeScript: Strategy, Observer, State, Builder, Singleton, Chain of Responsibility, token bucket and sliding window | [Snakes & Ladders](https://github.com/SarthakJain23/snakes-and-ladders-lld) · [Splitwise](https://github.com/SarthakJain23/splitwise-lld) · [ATM](https://github.com/SarthakJain23/atm-machine-lld) · [Doctor Appointment](https://github.com/SarthakJain23/doctor-appointment-lld) · [Rate Limiter](https://github.com/SarthakJain23/rate-limiter-lld) · [Logger](https://github.com/SarthakJain23/logger-lld) · [Customer Service](https://github.com/SarthakJain23/customer-service-lld) |
+| React Native | Navigation, auth flows with token management, push notifications with Expo, maps and camera, expense analytics | [Food Blog](https://github.com/SarthakJain23/Food-Blog-RN) · [Push Notifications](https://github.com/SarthakJain23/Push-Notifications-RN) · [Favourite Places](https://github.com/SarthakJain23/Favourite-Place-RN) · [Auth Management](https://github.com/SarthakJain23/Authentication-Management-RN) · [Expense Manager](https://github.com/SarthakJain23/Expense-Management-RN) · [Guess the Number](https://github.com/SarthakJain23/Guess-The-Number-RN) |
+| LangChain | Six chapters: agents and tool calling, RAG ingestion and LCEL chains, documentation assistant, LangGraph, reflection and reflexion agents | [langchain-course](https://github.com/SarthakJain23/langchain-course) |
+| Web | Issue tracker with Next.js, Prisma and PostgreSQL, [deployed on Vercel](https://issue-tracker-nu-livid.vercel.app) | [Issue-Tracker](https://github.com/SarthakJain23/Issue-Tracker) |
+
+</details>
+
+## Experience
+
+<details open>
+<summary><b>Full Stack & Mobile Engineer</b> · Turom, AI travel planning SaaS · Gurgaon · Aug 2025 – present</summary>
+
+<br>
+
+*Remix.js, Express, FastAPI, LangChain, React Native, MySQL, AWS (Lambda, SQS, S3)*
+
+- Built and shipped the React Native app end to end: navigation, deep linking, push notifications and Apple In-App Purchases.
+- Redesigned video upload as a serverless pipeline (pre-signed S3, SQS, Lambda), which removed media buffers from the Node.js event loop and ended recurring heap-memory failures and daily API slowdowns.
+- Built LangChain async workflows that extract user-provided information into structured form fields, with schema validation before anything reaches business logic.
+- Designed a provider-agnostic payment service that unifies Apple IAP and Stripe fee calculations behind one interface.
+- Built an admin-configurable referral engine: eligibility steps, rewards and pricing live in the database, so campaigns change without a deploy. Onboarded ~4,000 users per college within 3 days across 4 campaigns.
+
+**Video pipeline, before and after**
+
+```mermaid
+sequenceDiagram
+    participant App as React Native app
+    participant API as Node.js API
+    participant S3 as S3 uploads bucket
+    participant SQS as SQS queue
+    participant L as Lambda worker
+    participant Out as S3 processed bucket
+
+    App->>API: request upload
+    API-->>App: pre-signed S3 URL
+    App->>S3: upload video directly
+    App->>API: confirm upload
+    API->>SQS: enqueue processing job
+    SQS->>L: deliver job
+    L->>S3: read source
+    L->>Out: write processed output
+    Note over API: no video bytes ever pass through the API process
+```
+
+</details>
+
+<details>
+<summary><b>Full Stack Developer</b> · Care.Fi, B2B health fintech · Gurgaon · Apr 2024 – Aug 2025</summary>
+
+<br>
+
+*Python, Django REST Framework, NestJS, React, Next.js, PostgreSQL, Celery, Docker*
+
+- Migrated the Business Rule Engine from Java Spring Boot to Python DRF, removing a single-engineer bottleneck so the whole team could ship on it, and shortening deployment cycles.
+- Automated Credit Analysis Memorandum generation end to end, cutting report time by 70%.
+- Integrated GST, bureau (CIBIL, CRIF) and financial-system APIs supporting ~10,000 loan applications per day.
+- Built Metabase dashboards on optimised PostgreSQL KPI queries for 25 internal users and 600 to 700 hospital partners.
+
+</details>
+
+<details>
+<summary><b>Front End Developer</b> · Heartiee Greetings, design studio · Chandigarh · Mar 2022 – Apr 2024</summary>
+
+<br>
+
+*React, Next.js*
+
+- Built responsive React and Next.js websites, improving customer engagement and brand consistency.
+
+</details>
+
+## Stack
+
+| | | |
+|:--|:--|:--|
+| **Languages** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,py,postgres" height="36" alt="TypeScript, JavaScript, Python, SQL"></a> | TypeScript, JavaScript, Python, SQL |
+| **Frontend & Mobile** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,remix,tailwind" height="36" alt="React, Next.js, Remix, Tailwind"></a> | React, React Native, Next.js, Remix, Tailwind |
+| **Backend & Data** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,fastapi,django,postgres,mysql,mongodb,redis" height="36" alt="Node.js, Express, NestJS, FastAPI, Django, PostgreSQL, MySQL, MongoDB, Redis"></a> | Node/Express, NestJS, FastAPI, Django, PostgreSQL, MySQL, MongoDB, Redis |
+| **AI & Cloud** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=aws,docker,githubactions" height="36" alt="AWS, Docker, GitHub Actions"></a> | LangChain, LangGraph, RAG, Gemini, pgvector, ChromaDB, AWS (Lambda, SQS, S3), Docker, GitHub Actions |
+| **AI-assisted development** | | Claude Code, Cursor, Gemini Antigravity, MCP, parallel worktrees, spec-first prompting |
+
+## Education & achievements
+
+| | |
+|:--|:--|
+| **B.E. Computer Science Engineering** | Chitkara University, 2021 – 2025 · CGPA 9.73 / 10 |
+| **1st place, Coding Ninjas Codathon 2023** | Competitive programming |
+| **1000+ DSA problems** | LeetCode, Coding Ninjas, GeeksforGeeks |
 
 <p align="center">
-  <img width="49%" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=SarthakJain23&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=6c63ff&icon_color=6c63ff&text_color=8b8b8b&ring_color=6c63ff" alt="GitHub Stats" />
-  <img width="49%" src="https://streak-stats.demolab.com?user=SarthakJain23&theme=tokyonight&hide_border=true&background=0D1117&ring=6C63FF&fire=6C63FF&currStreakLabel=6C63FF&sideLabels=8B8B8B&dates=555555&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SarthakJain23&bg_color=0d1117&color=6c63ff&line=6c63ff&point=ffffff&area=true&area_color=6c63ff&hide_border=true&custom_title=Contribution%20Graph" width="95%" alt="Contribution Graph" />
-</p>
-
----
-
-<p align="center">
-  <b>💬 Let's Connect!</b><br/><br/>
-  <i>I'm actively looking for Software Engineering opportunities. Whether it's AI/ML, Full Stack, or Mobile — let's talk!</i><br/><br/>
-  <a href="https://www.linkedin.com/in/sarthak-jain-tech">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:sarthakj.dev@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://github.com/SarthakJain23">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  <br/><br/>
-  ⭐ <i>If you like my work, consider giving my repos a star!</i>
+  <a href="https://www.linkedin.com/in/sarthak-jain-tech"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:sarthakj.dev@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
